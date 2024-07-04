@@ -1,6 +1,9 @@
-﻿namespace Addresses.Repo
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace Addresses.Repo
 {
-    public class AddressRepository
+    public class AddressRepository : DbContext
     {
+
     }
 }
