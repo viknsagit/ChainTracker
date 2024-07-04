@@ -1,13 +1,17 @@
+using Addresses.Repo;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
-
 // Add services to the container.
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<AddressRepository>(options => options.UseNpgsql(builder.Configuration["dbString"]));
+builder.Services.AddSingleton<AddressRepositoryFactory>();
 
 var app = builder.Build();
 

@@ -9,8 +9,7 @@ namespace Transactions.Repository
 
         public TransactionsRepository(DbContextOptions<TransactionsRepository> options) 
             : base(options)
-        {
-        }
+        { }
 
         public async Task<Transaction?> FindAsync(string hash)
         {
