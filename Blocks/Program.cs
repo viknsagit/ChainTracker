@@ -13,7 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<BlockRepository>(options => options.UseNpgsql(builder.Configuration["dbString"]));
 builder.Services.AddSingleton<BlocksRepositoryFactory>();
-builder.Services.AddSingleton(new ProducerBuilder<string, string>(new ProducerConfig()
+builder.Services.AddSingleton(new ProducerBuilder<string, string>(new ProducerConfig
 {
     BootstrapServers = builder.Configuration["kafkaBootstrap"],
 }).Build());

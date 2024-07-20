@@ -2,7 +2,7 @@
 
 namespace Transactions.Kafka
 {
-    public class ConsumerService(IConsumer<string, string> consumer,ILogger<ConsumerService> logger,TransactionsIndexer indexer) : IHostedService
+    public class TransactionsConsumerService(IConsumer<string, string> consumer,ILogger<TransactionsConsumerService> logger,TransactionsIndexer indexer) : IHostedService
     {
         public Task StartAsync(CancellationToken cancellationToken)
         {
