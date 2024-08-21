@@ -35,7 +35,7 @@ In development
 
 ## Contribution
 
-Contributions to the project are welcome! If you encounter issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository: [ethereum_indexer](https://github.com/viknsagit/ethereum_indexer).
+Contributions to the project are welcome! If you encounter issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository: [ChainTracker issues](https://github.com/viknsagit/ChainTracker/issues)
 
 ## License
 
